@@ -57,6 +57,7 @@ class Likelist extends Component {
 
     handleScroll() {
         console.log('get in handleScroll');
+        console.log(this.myRef.current);
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const clientHeight = document.documentElement.clientHeight;
         const likeListTop = this.myRef.current.offsetTop;
