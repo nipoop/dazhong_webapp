@@ -36,20 +36,20 @@ class Likelist extends Component {
         if (this.props.pageCount !== 0) {
             return
         }
-        document.addEventListener('scroll', this.handleScroll);
+        document.addEventListener('touchmove', this.handleScroll);
         this.props.fetchLikes();
     }
 
     componentDidUpdate() {
         if (this.props.pageCount >= 3) {
-            document.removeEventListener('scroll', this.handleScroll);
+            document.removeEventListener('touchmove', this.handleScroll);
         };
     }
     componentWillUnmount() {
         // console.log('componentWillUnmount');
         if (this.props.loadTimes < 3) {
             console.log('get in unmount')
-            document.removeEventListener('scroll', this.handleScroll);
+            document.removeEventListener('touchmove', this.handleScroll);
         };
     }
 
@@ -61,6 +61,8 @@ class Likelist extends Component {
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const clientHeight = document.documentElement.clientHeight;
         const likeListTop = this.myRef.current.offsetTop;
+        console.log(this.myRef)
+        console.log(this.myRef.current)
         const likeListHeight = this.myRef.current.offsetHeight;
         if (scrollTop >= likeListTop + likeListHeight - clientHeight - 10 && this.props.pageCount < 3) {
             this.throttleFetchLikes()

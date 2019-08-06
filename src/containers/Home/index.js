@@ -10,6 +10,7 @@ import Banner from './components/Banner.js';
 import Activity from './components/Activity.js';
 import Footer from '../../components/Footer'
 import {actions as homeActions, getLikes, getDiscounts, getPageCountOfLikes } from '../../redux/modules/home.js';
+import VConsole from 'vconsole'
 
 class Home extends Component {
     render() {
@@ -29,6 +30,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
+        const vConsole = new VConsole();
         this.props.homeActions.loadDiscounts();
     }
 
