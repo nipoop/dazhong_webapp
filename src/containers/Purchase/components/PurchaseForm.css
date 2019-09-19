@@ -1,0 +1,94 @@
+.purchaseForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #999;
+}
+.purchaseForm__wrapper {
+    padding-left: 15px;
+    background-color: #fff;
+}
+.purchaseForm__row {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px 10px 0;
+    height: 38.4px;
+    font-size: 16px;
+}
+.purchaseForm__row:not(:last-child) {
+    background-image: url(//www.dpfile.com/mod/mbase-css/2.0.1/dist/outline/img/repeat-x-bottom.png);
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+}
+.purchaseForm__rowLabel {
+    width: 50%;
+    height: 20px;
+    line-height: 20px;
+}
+.purchaseForm__rowValue {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.purchaseForm__quantity {
+    width: 42px;
+    border: 1px solid #bbb;
+    color: #333;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    margin-left: 5px;
+}
+.purchaseForm__counter--dec {
+    box-sizing: border-box;
+    width: 30px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #bbb;
+    color: #bbb;
+    font-size: 12px;
+    line-height: 24px;
+}
+.purchaseForm__counter--inc {
+    box-sizing: border-box;
+    width: 30px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #f63;
+    color: #bbb;
+    line-height: 24px;
+    margin-left: 5px;
+}
+.purchaseForm__remark {
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    font-size: 12px;
+}
+.purchaseForm__remarkItem {
+    margin-right: 10px;
+}
+.purchaseForm__sign {
+  background-image: url("https://www.dpfile.com/mod/app-m-tuangou/1.3.79/css/img/comm.png");
+  background-size: 25px auto;
+  background-position: 0 -275px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+.purchaseForm__submit {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px 9px;
+    border-radius: 4px;
+    background-color: #f63;
+    color: #fff;
+}

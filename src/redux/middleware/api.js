@@ -22,15 +22,16 @@ export default store => next => action => {
     }
 
     const actionWith = (data) => {
-      const finalAction = {...action, ...data}
-      delete finalAction[FETCH_DATA]
-      return finalAction
+        const finalAction = {...action, ...data}
+        delete finalAction[FETCH_DATA]
+        return finalAction
     }
 
     const [ request, success, failure ] = types;
-
+    console.log('dispatch request')
     next(actionWith({type: request}));
     return fetchData(endpoint, schema).then(response => {
+        console.log('dispatch success')
         next(actionWith({
             type: success,
             response

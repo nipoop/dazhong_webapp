@@ -12,6 +12,7 @@ class Likelist extends Component {
         // this.throttleFetchLikes = throttle(this.props.fetchLikes);
         this.myRef = React.createRef();
         this.handleScroll = this.handleScroll.bind(this);
+        this.removeListener = false;
     }
 
     render() {
@@ -33,36 +34,34 @@ class Likelist extends Component {
 
     componentDidMount() {
         // console.log('componentDidMount');
-        if (this.props.pageCount !== 0) {
-            return
+        if (this.props.pageCount < 3) {
+            document.addEventListener('scroll', this.handleScroll);
+        } else {
+            this.removeListener = true;
         }
-        document.addEventListener('touchmove', this.handleScroll);
-        this.props.fetchLikes();
+        if (this.props.pageCount === 0) {
+            this.props.fetchLikes();
+        }
     }
 
     componentDidUpdate() {
         if (this.props.pageCount >= 3) {
-            document.removeEventListener('touchmove', this.handleScroll);
+            document.removeEventListener('scroll', this.handleScroll);
+            this.removeListener = true;
         };
     }
     componentWillUnmount() {
-        // console.log('componentWillUnmount');
-        if (this.props.loadTimes < 3) {
-            console.log('get in unmount')
-            document.removeEventListener('touchmove', this.handleScroll);
+        if (!this.removeListener) {
+            document.removeEventListener('scroll', this.handleScroll);
         };
     }
 
     throttleFetchLikes = throttle(this.props.fetchLikes);
 
     handleScroll() {
-        console.log('get in handleScroll');
-        console.log(this.myRef.current);
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const clientHeight = document.documentElement.clientHeight;
         const likeListTop = this.myRef.current.offsetTop;
-        console.log(this.myRef)
-        console.log(this.myRef.current)
         const likeListHeight = this.myRef.current.offsetHeight;
         if (scrollTop >= likeListTop + likeListHeight - clientHeight - 10 && this.props.pageCount < 3) {
             this.throttleFetchLikes()

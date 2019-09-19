@@ -6,6 +6,12 @@ import { connect } from 'react-redux';
 import { getError, actions as appActions } from '../../redux/modules/app.js';
 import Home from '../Home';
 import ProductDetail from '../ProductDetail';
+import Search from '../Search';
+import SearchResult from '../SearchResult';
+import Login from '../Login';
+import PrivateRoute from '../PrivateRoute';
+import Purchase from '../Purchase';
+import User from '../User';
 import './index.css';
 
 class App extends Component {
@@ -19,6 +25,11 @@ class App extends Component {
                     <Router>
                         <Switch>
                             <Route path='/detail/:id' component={ProductDetail} />
+                            <PrivateRoute path='/user' component={User} />
+                            <Route path='/search' component={Search} />
+                            <Route path='/search_result' component={SearchResult} />
+                            <Route path='/login' component={Login} />
+                            <PrivateRoute path='/purchase/:id' component={Purchase} />
                             <Route path='/' component={Home} />
                         </Switch>
                     </Router>

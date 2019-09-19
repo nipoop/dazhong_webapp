@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Banner.css'
+import './index.css'
 
 class Banner extends Component {
   render () {
