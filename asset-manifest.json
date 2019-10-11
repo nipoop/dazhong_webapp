@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dazhong_webapp/static/css/main.bd4065a3.chunk.css",
+    "main.js": "/dazhong_webapp/static/js/main.45d16dd2.chunk.js",
+    "main.js.map": "/dazhong_webapp/static/js/main.45d16dd2.chunk.js.map",
+    "runtime~main.js": "/dazhong_webapp/static/js/runtime~main.d809baed.js",
+    "runtime~main.js.map": "/dazhong_webapp/static/js/runtime~main.d809baed.js.map",
+    "static/js/2.a16cd466.chunk.js": "/dazhong_webapp/static/js/2.a16cd466.chunk.js",
+    "static/js/2.a16cd466.chunk.js.map": "/dazhong_webapp/static/js/2.a16cd466.chunk.js.map",
+    "index.html": "/dazhong_webapp/index.html",
+    "precache-manifest.f12320eb7ef5e5d484484841a25be6a0.js": "/dazhong_webapp/precache-manifest.f12320eb7ef5e5d484484841a25be6a0.js",
+    "service-worker.js": "/dazhong_webapp/service-worker.js",
+    "static/css/main.bd4065a3.chunk.css.map": "/dazhong_webapp/static/css/main.bd4065a3.chunk.css.map"
+  }
+}
