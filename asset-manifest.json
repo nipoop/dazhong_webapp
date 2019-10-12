@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd4065a3.chunk.css",
-    "main.js": "/static/js/main.45d16dd2.chunk.js",
-    "main.js.map": "/static/js/main.45d16dd2.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.a16cd466.chunk.js": "/static/js/2.a16cd466.chunk.js",
-    "static/js/2.a16cd466.chunk.js.map": "/static/js/2.a16cd466.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.27fb1f15445aae104040660cd6dcf043.js": "/precache-manifest.27fb1f15445aae104040660cd6dcf043.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.bd4065a3.chunk.css.map": "/static/css/main.bd4065a3.chunk.css.map"
+    "main.css": "/dazhong_webapp/static/css/main.bd4065a3.chunk.css",
+    "main.js": "/dazhong_webapp/static/js/main.45aa7caa.chunk.js",
+    "main.js.map": "/dazhong_webapp/static/js/main.45aa7caa.chunk.js.map",
+    "runtime~main.js": "/dazhong_webapp/static/js/runtime~main.d809baed.js",
+    "runtime~main.js.map": "/dazhong_webapp/static/js/runtime~main.d809baed.js.map",
+    "static/js/2.a16cd466.chunk.js": "/dazhong_webapp/static/js/2.a16cd466.chunk.js",
+    "static/js/2.a16cd466.chunk.js.map": "/dazhong_webapp/static/js/2.a16cd466.chunk.js.map",
+    "index.html": "/dazhong_webapp/index.html",
+    "precache-manifest.f3616f0fe43b6b642da732ae260d5da1.js": "/dazhong_webapp/precache-manifest.f3616f0fe43b6b642da732ae260d5da1.js",
+    "service-worker.js": "/dazhong_webapp/service-worker.js",
+    "static/css/main.bd4065a3.chunk.css.map": "/dazhong_webapp/static/css/main.bd4065a3.chunk.css.map"
   }
 }
